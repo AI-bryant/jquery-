@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery内容筛选选择器</title>
+    <script type="text/javascript" src="../../jquery-1.9.1.js"></script>
+</head>
+<body>
+    <script>
+        // $(':contains(text)')  例如：$(".div:contains(':contains')")  选择所有包含指定文本的元素
+        // $(':parent')          例如：$("a:parent")  选择所有含有子元素或者文本的元素
+        // $(':empty')           例如：$("a:empty")  选择所有没有子元素的元素(包括文本节点)
+        // $(':has(selector)')   例如：$(".div:has(span)")  选择元素中至少包括指定选择器的元素
+
+
+        // *1.:contains与:has都有查找的意思，但是contains查找包含“指定文本”的元素，has查找包含“指定元素”的元素
+        // *2.如果:contains匹配的文本包含在元素的子元素中，同样认为是符合条件的。
+        // *3.:parent与:empty是相反的，两者所涉及的子元素，包括文本节点
+    </script>
+</body>
+</html>

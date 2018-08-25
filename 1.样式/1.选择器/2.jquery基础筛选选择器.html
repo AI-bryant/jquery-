@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>jquery基础筛选选择器</title>
+    <script type="text/javascript" src="/jquery实例/jquery-1.9.1.js"></script>
 </head>
 <body>
+    <script>
 
+        // $(':first')   例如：$(".div:first")      匹配第一个元素
+        // $(':last')    例如：$(".div:last")      匹配最后一个元素
+        // $(':not(selector)') 例如：$("input:not(:checked) + p") 一个用来过滤的选择器，选择所有元素去除不匹配给定的选择器元素
+        // $(':eq(index)')   例如：$(".aaron:eq(2)")  在匹配的集合中选择索引值为index的元素
+        // $(':gt(index)')   例如：$(".aaron:gt(3)")  选择匹配集合中所有大于给定index（索引值）的元素
+        // $(':even')                                 选择索引值为偶数的元素，从0开始计数
+        // $(':odd')                                选择索引值为奇数的元素，从0开始计数
+        // $(':lt(index)')   例如：$(".aaron:lt(2)")  选择匹配集合中所有索引值小于给定index参数的元素
+        // $(':header')                     选择所有标题元素，像h1，h2，h3等
+        // $(':lang(language)')             选择指定语言的所有元素
+        // $(':root')                           选择该文档的根元素
+        // $(':animated')                   选择所有正在执行动画效果的元素
+
+
+        //*1.:eq(), :lt(), :gt(), :even, :odd 用来筛选他们前面的匹配表达式的集合元素，根据之前匹配的元素在进一步筛选，注意jQuery合集都是从0开始索引
+        //*2.gt是一个段落筛选，从指定索引的下一个开始，gt(1) 实际从2开始
+    </script>
 </body>
 </html>

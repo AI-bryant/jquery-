@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery属性筛选选择器</title>
+    <script type="text/javascript" src="../../jquery-1.9.1.js"></script>
+</head>
+<body>
+    <script>
+        // $("[attribute|='value']") 例如：$('div[name|="-"]')  选择指定属性值等于给定字符串或以该文字串为前缀(该字符串后跟一个连字符"-"的元素)
+        // $("[attribute*='value']") 例如：$('div[name*="test"]')  选择指定属性具有包含一个给定的子字符串的元素(选择给定的属性是以包含某些值的元素)
+        // $("[attribute~='value']") 例如：$('div[name~="a"]')  选择指定属性用空格分割的值中包含一个给定值的元素
+        // $("[attribute='value']")  例如：$('div[name=p1]') 选择指定属性是给定值的元素
+        // $("[attribute!='value']") 例如：$('div[testattr!="true"]')   选择不存在的指定元素，或者指定的属性值不等于给定值的元素
+        // $("[attribute^='value']") 例如：$('div[name^=imooc]')  选择指定属性是以给定的字符串开始的元素
+        // $("[attribute$='value']") 例如：$('div[name$=imooc]')  选择指定属性是给定的值结尾的元素，这个比较是区分大小写
+        // $("[attribute]")      例如：$('div[p2]')      选择匹配所有具有指定属性的元素，该属性可以是任何值
+        // $("[attributeFilter1][attributeFilterN]")   选择匹配所有指定的属性筛选器的元素(结合多条件查询)
+    </script>
+</body>
+</html>
