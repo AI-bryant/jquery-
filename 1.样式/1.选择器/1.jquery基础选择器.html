@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery基础选择器</title>
+    <script type="text/javascript" src="../../jquery-1.9.1.js"></script>
+</head>
+<body>
+     <div id="axf" class="axf">
+         hello
+     </div>
+     <div>world</div>
+    <script>
+        //id选择器
+        $('#axf').css('color','red');
+
+        //类选择器
+        $('.axf').css('font-size','30px');
+
+        //元素选择器
+        $('div').last().css('color','blue');
+
+        //*选择器，选中文档中所有的元素
+        $('*').css('font-weight','bold');
+        //层级选择器
+        //$('parent > child')       子选择器：选择父类中所有直接子类的元素（第一层子元素）
+        //$('ancestor descendant')  后代选择器：选择父类中所有子类元素（所有层级子元素）
+        //$('prev + next')          相邻兄弟选择器：选择所有紧接在'prev'元素后的'next'元素
+        //$('prev ~ siblings')      一般兄弟选择器：匹配'prev'元素之后的所有兄弟元素，
+        //                          具有相同的父元素，并匹配过滤'siblings'选择器
+        //1.层级选择器都有一个参考节点
+        //2.后代选择器包含子选择器的选择的内容
+        //3.一般兄弟选择器包含相邻兄弟选择的内容
+        //4.相邻兄弟选择器和一般兄弟选择器所选择到的元素，必须在同一个父元素下
+    </script>
+</body>
+</html>
