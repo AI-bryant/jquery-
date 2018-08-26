@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery表单元素选择器</title>
+    <script type="text/javascript" src="../../jquery-1.9.1.js"></script>
+</head>
+<body>
+    <script>
+        // $(':input')         选择所有input，textarea，select和button的元素
+        // $(':text')    例如：$('input:text')      匹配所有文本框
+        // $(':password')  例如：$('input:password')    匹配所有密码框
+        // $(':radio')     例如：$('input:radio')    匹配所有单选项框
+        // $(':checkbox')      匹配所有复选项框
+        // $(':submit')        匹配所有提交按钮
+        // $(':image')         匹配所有图像域
+        // $(':reset')         匹配所有重置按钮
+        // $(':button')        匹配所有按钮
+        // $(':file')          匹配所有文本域
+        //
+        // 注意事项：
+        // 除了input筛选选择器，几乎每个表单类别筛选器都对应一个input元素的type值。
+        // 大部分表单类别筛选器可以使用属性筛选器替换。比如 $(':password') == $('[type=password]')
+        //
+        //
+        //
+        // $(':enabled')           选取可用的表单元素
+        // $(':disabled')          选取不可用的表单元素
+        // $(':checked')           选取被选中的<input>选取不可用的表单元素
+        // $(':selected')          选取被选中的<option>元素
+        //
+        // 注意事项：
+        //
+        // 选择器适用于复选框和单选框，对于下拉框元素, 使用 :selected 选择器
+        // 在某些浏览器中，选择器:checked可能会错误选取到<option>元素，
+        // 所以保险起见换用选择器input:checked，确保只会选取<input>元素
+    </script>
+</body>
+</html>

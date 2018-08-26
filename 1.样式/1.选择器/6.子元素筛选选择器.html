@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素筛选选择器</title>
+    <script type="text/javascript" src="../../jquery-1.9.1.js"></script>
+</head>
+<body>
+    <script>
+        // $(':first')    例如：$('.first-div a:first-child')     选择所有父级元素下的第一个元素
+        // $(':last-child') 例如：$('.first-div a:last-child')   选择所有父级元素下的最后一个元素
+        // $(':only-child')  例如：$('.first-div a:only-child')  如果某个元素是其父元素的唯一子元素，那么它就会被选中
+        // $(':nth-child')   例如：$('.last-div a:nth-child(2)')  选择的他们所有父元素的第n个子元素
+        // $(':nth-last-child') 例如：$('.last-div a:nth-last-child(2)')   选择所有他们父元素的第n个子元素。计数从最后一个元素开始到第一个
+
+        // 注意事项：
+        //
+        // 1.:first只匹配一个单独的元素，但是:first-child选择器可以匹配多个：即为每个父级元素匹配第一个子元素。这相当于:nth-child(1)
+        // 2.:last 只匹配一个单独的元素， :last-child 选择器可以匹配多个元素：即，为每个父级元素匹配最后一个子元素
+        // 3.如果子元素只有一个的话，:first-child与:last-child是同一个
+        // 4.:only-child匹配某个元素是父元素中唯一的子元素，就是说当前子元素是父元素中唯一的元素，则匹配
+        // 5.jQuery实现:nth-child(n)是严格来自CSS规范，所以n值是“索引”，也就是说，从1开始计数，:nth-child(index)从1开始的，而eq(index)是从0开始的
+        // 6.nth-child(n) 与 :nth-last-child(n) 的区别前者是从前往后计算，后者从后往前计算
+    </script>
+</body>
+</html>
